@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid #e83f57;
+  background-color: #e83f57;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+/*
+*Start Header
+*/
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: #3de07e;
+  max-height: 600px;
+}
+
+.icon {
+  grid-column: 1 / -1;
+}
+
+.headline {
+  grid-column: 1 / -1;
+  margin-top: auto;
+  font-size: 6.25rem;
+  text-align: center;
+}
+
+.ninja {
+  margin-top: auto;
+  grid-column: 6 / 8;
+  align-self: center;
+  max-width: 100%;
+}
+
+/* End Header */
+
+
+/*
+*  Start SmallCards = card
+*/
+ .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 4rem 10rem;
+}
+
+
+.card {
+  margin-bottom: 2rem;
+}
+.card img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 140%;
+  max-width: 100%;
+}
+
+
+
+/*
+*  Start BigCards = big-card
+*/
+
+.wrapperBig {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+    margin: 4rem 4rem 4rem 4rem;
+}
+
+.big-card h2  {
+    color: #000000;
+}
+.big-card p  {
+    color: #000000;
+}
+
+.big-card img {
+  max-width: 100%;
+
+}
+
+.big-card section  {
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+ .big-card section button {
+  padding: 1rem 2rem;
+}
+
+main {
+    padding: 0 0 2rem 0;
+}
+/*End Main*/
+
+/*
+*Start footer
+*
+*/
+
+footer {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer .footer-links {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav .link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+footer .social-media .icons {
+  display: flex;
+}
+
+footer .social-media .icons img {
+  margin-right: 0.5rem;
+}
